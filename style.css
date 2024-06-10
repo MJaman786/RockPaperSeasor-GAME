@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family:monospace;
+}
+h2{
+    text-align: center;
+}
+.container{
+    max-width: 500px;
+    width: 90%;
+    /* height: 30%; */
+    /* background-color: aquamarine; */
+    box-shadow: 0 0 10px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.btn-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 1px 1px 5px;
+    border-radius: 10px;
+}
+
+.players-info{
+    font-size: 1rem;
+    color:blueviolet;
+}
+
+.player-win{
+    font-size: 1rem;
+    color: #42b883;
+}
