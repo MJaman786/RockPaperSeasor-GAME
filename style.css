@@ -37,7 +37,7 @@ h2{
     row-gap: 15px;
     flex-wrap: wrap;
     width: 100%;
-    background-color: aliceblue;
+/*     background-color: aliceblue; */
 }
 button{
     padding: 10px 10px;
