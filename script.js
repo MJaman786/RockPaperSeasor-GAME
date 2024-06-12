@@ -1,3 +1,9 @@
+let record = {
+    user : 0,
+    computer : 0,
+    draw : 0
+}
+
 function win(psARG, csARG) {
     let result;
     
@@ -5,13 +11,18 @@ function win(psARG, csARG) {
         (psARG === 'Paper' && csARG === 'Rock') ||
         (psARG === 'Scissors' && csARG === 'Paper')) {
         result = 'You win!';
+        record.user++;
     } else if (psARG === csARG) {
         result = "It's a tie!";
+        record.draw++;
     } else {
         result = 'Computer wins!';
+        record.computer++;
     }
 
-    document.querySelector('.player-win').innerText = `RESULT : ${result}`;
+    // document.querySelector('.player-win').innerText = `RESULT : ${result}`;
+    document.querySelector('.player-win').innerText = `RESULT : ${result} \nPLAYER : ${record.user} | COMPUTER : ${record.computer} | DRAW : ${record.draw}`;
+    console.log(record)
 }
 
 function computerGenerator(playerSelection) {
